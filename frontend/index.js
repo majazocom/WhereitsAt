@@ -7,6 +7,8 @@ const loginUsername = document.querySelector('#login-username');
 const loginPassword = document.querySelector('#login-password');
 const loginButton = document.querySelector('#login-button');
 
+//hej
+
 async function createAccount(accountInformation) {
     const response = await fetch('http://localhost:5000/api/signup', {
         method: 'POST',
