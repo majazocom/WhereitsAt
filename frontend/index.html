@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Events</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<h4 id="staff">For Staff</h6>
+<button type="button" id="staff" onclick="window.location.href='login.html'">Logga in</button>
+
+<h1>Events</h1>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: darkblue;  
+  color:white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    text-align: center;
+    color: pink;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  padding: 20px;
+}
+
+.main {
+  flex: 70%;
+  padding: 20px;
+}
+
+.big {
+ border: 3px solid grey;
+  width: 100%;
+  padding: 20px;
+  height: 200px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.small {
+ border: 3px solid grey;
+  width: 100%;
+  padding: 20px;
+  height: 200px;
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.container6 {
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center 
+}
+
+div.container6 p {
+  margin: 0 
+}
+
+#staff {
+float: right;
+
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="side">
+    <div class="small" id="konsert1" onclick="window.location.href='ticket.html'">Date 15/4</div>
+    <br>
+     <div class="small" id="konsert2" onclick="window.location.href='ticket.html'">Date 3/4</div>
+    <br>
+     <div class="small" id="konsert3" onclick="window.location.href='ticket.html'">Date 28/4</div>
+     <br>
+     <div class="small" id="konsert4" onclick="window.location.href='ticket.html'">Date 27/3</div>
+   
+  </div>
+  <div class="main">
+    <div class="big" id="konsert1" style="height:200px;" onclick="window.location.href='ticket.html'">Lasse-Stefanz </div>
+    <br>
+    <div class="big" id="konsert2" style="height:200px;" onclick="window.location.href='ticket.html'">Pelle trubadur </div>
+    <br>
+    <div class="big" id="konsert3" style="height:200px;" onclick="window.location.href='ticket.html'">Kajsas kör </div>
+    <br>
+    <div class="big" id="konsert4" style="height:200px;" onclick="window.location.href='ticket.html'">Klubb untz </div>
+
+
+  </div>
+</div>
+
+
+</body>
+</html>
+
+

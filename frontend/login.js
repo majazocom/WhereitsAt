@@ -3,28 +3,28 @@ const emailElem = document.querySelector('#email');
 const removeButton = document.querySelector('#remove-button');
 
 async function isLoggedIn() {
-    const response = await fetch('http://localhost:3000/api/validation');
+    const response = await fetch('http://localhost:5000/api/validation');
     const data = await response.json();
 
     console.log(data);
 
     if (data.loggedIn == false) {
-        window.location.href = 'http://localhost:3000/';
+        window.location.href = 'http://localhost:5000/';
     } 
 }
 
 async function logout() {
-    const response = await fetch('http://localhost:3000/api/logout');
+    const response = await fetch('http://localhost:5000/api/logout');
     const data = await response.json();
     console.log(data);
 
     if (data.success) {
-        window.location.href = 'http://localhost:3000/';
+        window.location.href = 'http://localhost:5000/';
     }
 }
 
 async function getAccountInformation() {
-    const response = await fetch('http://localhost:3000/api/account');
+    const response = await fetch('http://localhost:5000/api/account');
     const data = await response.json();
 
     console.log(data);
@@ -36,17 +36,17 @@ async function getAccountInformation() {
 }
 
 async function removeAccount() {
-    const response = await fetch('http://localhost:3000/api/remove');
+    const response = await fetch('http://localhost:5000/api/remove');
     const data = await response.json();
 
     console.log(data);
     if (data.success) {
-        window.location.href = 'http://localhost:3000/';
+        window.location.href = 'http://localhost:5000/';
     }
 }
 
 async function getUserAccounts() {
-    const response = await fetch('http://localhost:3000/api/user-accounts');
+    const response = await fetch('http://localhost:5000/api/user-accounts');
     const data = await response.json();
 
     console.log(data);
